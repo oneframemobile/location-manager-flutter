@@ -19,6 +19,7 @@ class LocationManager {
     if (await getPermissionStatus()) {
       var serviceStatus = await location_perm.LocationPermissions().checkServiceStatus();
 
+      //TODO sil
       if (serviceStatus != location_perm.ServiceStatus.enabled) {
         await location_perm.LocationPermissions().serviceStatus.listen((event) {
           if (event.index == 2) {
