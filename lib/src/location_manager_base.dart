@@ -54,7 +54,7 @@ class LocationManager {
       try {
         onLocationValue(LatLng(data.latitude, data.longitude));
       } catch (e) {
-        print('error');
+        print("listenLocation catch");
       }
     });
   }
