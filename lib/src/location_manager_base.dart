@@ -46,15 +46,19 @@ class LocationManager {
 
   Future<void> listenLocation({required Function(LatLng) onLocationValue, int interval = 3000}) async {
     await location.changeSettings(interval: interval);
-    locationManager = location.onLocationChanged.listen((LocationData currentLocation) {
-      print('listening...');
-    });
+    try {
+      locationManager = location.onLocationChanged.listen((LocationData currentLocation) {
+        print('listening...');
+      });
+    } catch (e) {
+      //
+    }
 
     locationManager.onData((data) {
       try {
         onLocationValue(LatLng(data.latitude!, data.longitude!));
       } catch (e) {
-        print("listenLocation catch");
+        //
       }
     });
   }
