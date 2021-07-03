@@ -73,8 +73,9 @@ class LocationManager {
   }
 
   Future<bool> requestPermission() async {
-    var status = await handler.Permission.location.request().isGranted;
-    if (status) {
+    //var status = await handler.Permission.location.request().isGranted;
+    var status = await location_perm.LocationPermissions().requestPermissions();
+    if (status == location_perm.PermissionStatus.granted) {
       return true;
     } else {
       return false;
