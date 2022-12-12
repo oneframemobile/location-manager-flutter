@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
               children: <Widget>[
                 TextButton(
                   style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                   ),
                   onPressed: () {
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
                 ),
                 TextButton(
                   style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                   ),
                   onPressed: () {
@@ -61,6 +63,7 @@ class MyApp extends StatelessWidget {
                 ),
                 TextButton(
                   style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                   ),
                   onPressed: () {
