@@ -9,9 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_maps_flutter: ^2.1.8
+  google_maps_flutter: ^2.2.1
   location: 4.4.0
-  permission_handler: 9.2.0
+  permission_handler: 10.2.0
   location_permissions: 4.0.0
 
 dev_dependencies:
