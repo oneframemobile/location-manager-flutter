@@ -1,12 +1,6 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
-    <CLASSES>
-      <root url="file://$USER_HOME$/tools/flutter/.pub-cache/hosted/pub.dartlang.org/location_permissions-4.0.0" />
-      <root url="file://$USER_HOME$/tools/flutter/.pub-cache/hosted/pub.dartlang.org/location_web-3.1.1" />
-      <root url="file://$USER_HOME$/tools/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-2.1.8" />
-      <root url="file://$USER_HOME$/tools/flutter/.pub-cache/hosted/pub.dartlang.org/location-4.4.0" />
-      <root url="file://$USER_HOME$/tools/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-9.2.0" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>

@@ -41,22 +41,31 @@ class MyApp extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                FlatButton(
-                  color: Colors.grey.shade300,
+                TextButton(
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
+                  ),
                   onPressed: () {
                     startService();
                   },
                   child: Text("Start"),
                 ),
-                FlatButton(
-                  color: Colors.grey.shade300,
+                TextButton(
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
+                  ),
                   onPressed: () {
                     stopService();
                   },
                   child: Text("Stop"),
                 ),
-                FlatButton(
-                  color: Colors.grey.shade300,
+                TextButton(
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
+                  ),
                   onPressed: () {
                     resumeService();
                   },
